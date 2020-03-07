@@ -1,0 +1,45 @@
+{
+  "name": "sitemap-ping-action",
+  "version": "0.0.1",
+  "author": "atymic @atymic",
+  "bugs": "https://github.com/atymic/sitemap-ping-action/issues",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "got": "^10.6.0",
+    "tslib": "^1",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^10",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "@zeit/ncc": "^0.20.5",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/atymic/sitemap-ping-action",
+  "keywords": [
+    "sitemap",
+    "ping",
+    "google",
+    "seo",
+    "bing"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": "atymic/sitemap-ping-action",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint **/*.ts --cache",
+    "release": "ncc build src/index.ts -o dist && git add -f dist/",
+    "test": "jest"
+  }
+}

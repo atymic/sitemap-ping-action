@@ -1,0 +1,12 @@
+name: 'atymic/sitemap-ping-action'
+description: 'Ping search engines when website content is updated'
+inputs:
+    sitemap-url:
+        description: 'Root sitemap URL'
+        required: true
+runs:
+    using: 'node12'
+    main: 'dist/index.js'
+branding:
+    icon: server
+    color: 'green'
