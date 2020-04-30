@@ -12,7 +12,7 @@ Feel free to PR more.
 ## Using the action
 
 In your workflow definition file, add the following step. This should be after you've deployed your site.
-You'll need to add the `SITEMAP_URL` secret in the repo's secrets management as well.
+You'll need to add the `SITEMAP_URL` secret in the repo's secrets management as well (or you could hardcode it in the pipeline).
 
 ```yaml
 # .github/workflows/workflow.yml
@@ -24,7 +24,7 @@ jobs:
             - run: deploy # Deploy your site
             - uses: atymic/sitemap-ping-action@master
               with:
-                  sitemapUrl: ${{ secrets.SITEMAP_URL }}
+                  sitemap-url: ${{ secrets.SITEMAP_URL }}
             - ... other steps
 ```
 ## Contributing
