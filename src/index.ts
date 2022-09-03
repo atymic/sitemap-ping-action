@@ -1,5 +1,4 @@
 import Google from "./SearchEngine/Google";
-import Bing from "./SearchEngine/Bing";
 
 const core = require('@actions/core');
 const validUrl = require('valid-url');
@@ -12,8 +11,6 @@ if (!validUrl.isUri(sitemapUrl)) {
 
 Promise.all([
     (new Google()).ping(sitemapUrl),
-    (new Bing()).ping(sitemapUrl),
 ]).then(() => {
     console.info('Sitemap submitted successfully')
 });
-

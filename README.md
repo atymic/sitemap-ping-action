@@ -5,7 +5,6 @@ search engines that it's been updated.
 
 **Supported Search Engines**
 - Google
-- Bing
 
 Feel free to PR more.
 
