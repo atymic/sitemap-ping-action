@@ -5,7 +5,7 @@
   "bugs": "https://github.com/atymic/sitemap-ping-action/issues",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "got": "^10.6.0",
+    "got": "^11.8.5",
     "tslib": "^1",
     "valid-url": "^1.0.9"
   },
