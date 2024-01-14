@@ -1,10 +1,14 @@
+## No longer maintained
+
+Google (the last remaining engine) has removed the ping endpoint, thus this repo is being archived.
+
 # Sitemap Ping GitHub Action
 
 This actions automatically pings search engines to notify them that your site has changed. For example, after deploying your static site you may want to notify
 search engines that it's been updated.
 
 **Supported Search Engines**
-- Google
+- ~Google~
 
 Feel free to PR more.
 
